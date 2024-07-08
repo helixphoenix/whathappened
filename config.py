@@ -14,9 +14,9 @@ events_urls = {'1':historical_events_text_url,
 
 input_request = ("What are you after dear ? Please enter: \n"
 		"1 - to search historical events by text, \n"
-		"2 - to search year, \n"
-		"3 - to search month,  \n"
-		"4 - to search day \n"
+		"2 - to search by year, \n"
+		"3 - to search by month,  \n"
+		"4 - to search by day \n"
 		)
 
 text_input= "Query text to search events by. Use keywords or short phrases for best match results:"
