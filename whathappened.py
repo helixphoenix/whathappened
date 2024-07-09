@@ -8,20 +8,18 @@ def search_event():
     return history
 
 
-def structure_result(history):
-   pretty_history = sorted(history,key=lambda k: k['year'],reverse = True ) 
-   return pretty_history
+
+def print_pretty(response):
+    for event in response:
+        pretty=f"Date: {event['year']}/{event['month']}/{event['day']}\nWhat happened?! : {event['event']}"
+        print(pretty)
+    return print("His torry has been presented."  )  
 
 def whathappened():
     hist_event=search_event()
     if hist_event:
-    
-    #   pretty=structure_result(hist_event)  
-      for date in hist_event:
-        print(json.dumps(date, indent=4))
+        print_pretty(hist_event)
     else:
         print("Something wrong happened")
-
-
 
 whathappened()
